@@ -1,0 +1,65 @@
+.page-screen {
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    background: url(../img/background2.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 753px;
+}
+
+@media screen and (max-width:550px) {
+    .screen {
+        align-items: center
+    }
+}
+
+.screen {
+    width: 1160px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.form-login {
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, .12);
+    border-radius: 4px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .2);
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 380px
+}
+
+.form-login__section {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 320px
+}
+
+.form-login__section_button {
+    padding-top: 10px
+}
+
+.form-login__item {
+    padding-bottom: 10px
+}
+
+.form-login__title {
+    text-transform: none;
+    margin: 0
+}
+
+.form-login__registration-wrapper {
+    width: 99px
+}
+
+.form-login__section_registration {
+    align-items: center
+}
+
+.form-login__section_registration,
+.radio-buttons {
+    display: flex;
+    justify-content: space-between
+}

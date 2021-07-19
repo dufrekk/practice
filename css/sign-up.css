@@ -1,0 +1,303 @@
+.page-screen {
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    background: url(../img/background2.jpg) 50% no-repeat;
+    background-size: cover;
+    height: 753px;
+}
+
+@media screen and (max-width:550px) {
+    .screen {
+        align-items: center
+    }
+}
+
+.screen {
+    width: 1160px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.form-registration {
+    position: absolute;
+    width: 380px;
+    height: 646px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.form-registration__section {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.form-registration__item {
+    padding-bottom: 10px;
+}
+
+.form-registration__item:last-child {
+    padding-bottom: 0;
+}
+
+.form-registration__sub-title {
+    margin: 0;
+    padding-bottom: 5px;
+    text-transform: uppercase
+}
+
+.surname {
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    margin-top: 74px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font: 14px "Montserrat";
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.25);
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.man {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    font: 14px "Montserrat";
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.woman {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.radio-button {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+.radio-button:checked:checked,
+.radio-button:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.radio-button:checked+label,
+.radio-button:not(:checked)+label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.radio-button:checked+label:before,
+.radio-button:not(:checked)+label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background-color: #ffffff;
+}
+
+.radio-button:checked+label:before {
+    border: 1px solid #BC9CFF;
+}
+
+.radio-button:checked+label:before,
+.radio-button:not(:checked)+label:before {
+    border-radius: 100%;
+}
+
+.radio-button:checked+label:after,
+.radio-button:not(:checked)+label:after {
+    content: "";
+    position: absolute;
+    transition: all 0.2s ease;
+}
+
+.radio-button:checked+label:after,
+.radio-button:not(:checked)+label:after {
+    left: 4px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.radio-button:not(:checked)+label:after {
+    opacity: 0;
+}
+
+.radio-button:checked+label:after {
+    opacity: 1;
+}
+
+.birthday {
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    margin-top: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font: 14px "Montserrat";
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.25);
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.form-registration .birthday-text {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.form-registration .data-text {
+    margin-bottom: 0;
+}
+
+.email {
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    margin-top: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font: 14px "Montserrat";
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.25);
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.email:focus {
+    color: black;
+}
+
+.password {
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    margin-top: 60px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font: 14px "Montserrat";
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.25);
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.password:focus {
+    color: black;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    cursor: pointer;
+    font: 12px;
+    margin-left: 10px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.toggle-button {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    margin: 0;
+    vertical-align: top;
+    background: #ffffff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.toggle-button::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
+    transform: translateX(0);
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.toggle-button:checked::after {
+    transform: translateX(calc(100% + 3px));
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.toggle-button:checked {
+    border: 1px solid #BC9CFF;
+    border-radius: 30px;
+}
+
+.form-registration .button-sign-in {
+    font: 12px "Montserrat";
+    text-align: center;
+    color: #BC9CFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 99px;
+    height: 44px;
+    border: 2px solid;
+    border-radius: 22px;
+    border-image-radius: linear-gradient(to top, #BC9CFF 0%, #8BA4F9 100%);
+    background-color: white;
+    margin-left: 30px;
+}
+
+.form-registration__section_login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}

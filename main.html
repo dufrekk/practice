@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Отель TOXIN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="standard-nav-bar">
+            <div class="standard-nav-bar__container">
+                <div class="standard-nav-bar__mobile-logo">
+                    <div class="logo  logo_mobile">
+                        <object class="logo__svg" data="./img/logo.svg" type="image/svg+xml"></object>
+                    </div>
+                </div>
+                <div class="standard-nav-bar__logo">
+                    <div class="logo">
+                        <object class="logo__svg" data="./img/TOXIN.svg" type="image/svg+xml"></object>
+                    </div>
+                </div><span class="standard-nav-bar__mobile-menu">menu</span>
+                <div class="standard-nav-bar__navigation-region">
+                    <nav class="navigation">
+                        <ul class="navigation__menu">
+                            <li class="navigation__item"><a class="navigation__item-link" href="#">О&nbsp;нас</a>
+                            </li>
+                            <li class="navigation__item  navigation__item_sub"><a class="navigation__item-link" href="#">Услуги<span>expand_more</span></a>
+                            </li>
+                            <li class="navigation__item"><a class="navigation__item-link" href="#">Вакансии</a>
+                            </li>
+                            <li class="navigation__item"><a class="navigation__item-link" href="#">Новости</a>
+                            </li>
+                            <li class="navigation__item"><a class="navigation__item-link" href="#">Соглашения<span>expand_more</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div><span class="standard-nav-bar__mobile-profile">person_outline</span>
+                <div class="standard-nav-bar__login-region">
+                    <div class="standard-nav-bar__logged-element">
+                        <button class="buttons  buttons_border buttons_free-height buttons_padding20" type="button">Войти</button>
+                    </div>
+                    <div class="standard-nav-bar__logged-element">
+                        <button class="buttons  buttons_full buttons_free-height buttons_padding20" type="button">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-screen">
+        <section class="screen">
+            <div class="screen__form-regon">
+                <form class="form-selection">
+                    <header class="form-selection__title-wrapper">
+                        <h1 class="form-selection__title">Найдём номера под ваши пожелания</h1>
+                    </header>
+                    <div class="form-selection__date-picker-wrapper">
+                        <div class="form-selection__arrival">
+                            <h3 class="form-selection__sub-title">Прибытие</h3>
+                            <div class="date-dropdown">
+                                <input class="text-field" placeholder="ДД.ММ.ГГГГ" type="text" autocomplete="off" id="form-selection-arrival"><span class="date-dropdown__marker">expand_more</span>
+                            </div>
+                        </div>
+                        <div class="form-selection__departure">
+                            <h3 class="form-selection__sub-title">Выезд</h3>
+                            <div class="date-dropdown">
+                                <input class="text-field" placeholder="ДД.ММ.ГГГГ" type="text" autocomplete="off" id="form-selection-departure"><span class="date-dropdown__marker">expand_more</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-selection__dropdown">
+                        <h3 class="form-selection__sub-title">гости</h3>
+                        <div class="dropdown dropdown-visitors">
+                            <p class="dropdown__selection">Сколько гостей</p><span class="dropdown__marker">expand_more</span>
+                            <div class="dropdown__menu" data-separate="гость,гостя,гостей">
+                                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="">
+                                    <p class="dropdown__line-title">ВЗРОСЛЫЕ</p>
+                                    <div class="dropdown__controls">
+                                        <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
+                                        <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
+                                    </div>
+                                </div>
+                                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="">
+                                    <p class="dropdown__line-title">ДЕТИ</p>
+                                    <div class="dropdown__controls">
+                                        <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
+                                        <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
+                                    </div>
+                                </div>
+                                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="младенец,младенца,младенцев">
+                                    <p class="dropdown__line-title">МЛАДЕНЦЫ</p>
+                                    <div class="dropdown__controls">
+                                        <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
+                                        <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
+                                    </div>
+                                </div>
+                                <div class="dropdown__menu-row dropdown__menu-row_buttons">
+                                    <div class="dropdown__button-clear">
+                                        <button class="buttons  buttons_link buttons_dark" type="button">ОЧИСТИТЬ</button>
+                                    </div>
+                                    <div class="dropdown__separator"></div>
+                                    <div class="dropdown__button-submit">
+                                        <button class="buttons  buttons_link" type="button">ПРИМЕНИТЬ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="buttons  buttons_full buttons_arrow buttons_big" type="button">ПОДОБРАТЬ НОМЕР</button>
+                </form>
+            </div>
+            <div class="screen__offer-region">
+                <p class="screen__offer-text">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <hr class="page-footer__separator">
+        <div class="footer footer_widgets">
+            <div class="footer__widget-region">
+                <div class="footer__widget footer__widget_logo">
+                    <div class="logo">
+                        <object class="logo__svg" data="./img/TOXIN.svg" type="image/svg+xml"></object>
+                    </div>
+                    <p class="footer__logo-text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+                </div>
+                <div class="footer__widget">
+                    <div class="widget  toggle_menu">
+                        <h3 class="widget__title">навигация</h3>
+                        <nav class="navigation  navigation_vertical">
+                            <ul class="navigation__menu">
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/about">О нас</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/news">Новости</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/support">Служба поддержки</a>
+                                </li>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__widget">
+                    <div class="widget  toggle_menu">
+                        <h3 class="widget__title">О нас</h3>
+                        <nav class="navigation  navigation_vertical">
+                            <ul class="navigation__menu">
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/support">О сервисе</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/our-team">Наша команда</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/careers">Вакансии</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/investors">Инвесторы</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__widget">
+                    <div class="widget  toggle_menu">
+                        <h3 class="widget__title">Служба поддержки</h3>
+                        <nav class="navigation  navigation_vertical">
+                            <ul class="navigation__menu">
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/agreement">Соглашения</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/community">Сообщества</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/contacts">Связь с нами</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__widget">
+                    <div class="widget  toggle_subscribe">
+                        <h3 class="widget__title">Подписка</h3>
+                        <p class="widget__description">Получайте специальные предложения и новости сервиса</p>
+                        <div class="subscription-text-field">
+                            <input class="text-field" placeholder="Email" type="text" autocomplete="off"><span class="subscription-text-field__marker">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer__separator">
+            <div class="footer__copyright-region">
+                <p class="footer__copyright">Copyright © 2018 Toxin UI Kit. All rights reserved.</p>
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__item-link" href="#"><img src="img/twitter.svg" width="24" height="24" alt="twitter"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__item-link" href="#"><img src="img/facebook.svg" width="24" height="24" alt="facebook"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__item-link" href="#"><img src="img/instagram.svg" width="24" height="24" alt="instagram"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

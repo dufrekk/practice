@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация | Отель TOXIN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sign-up.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="standard-nav-bar">
+            <div class="standard-nav-bar__container">
+                <div class="standard-nav-bar__mobile-logo">
+                    <div class="logo  logo_mobile">
+                        <object class="logo__svg" data="./img/logo.svg" type="image/svg+xml"></object>
+                    </div>
+                </div>
+                <div class="standard-nav-bar__logo">
+                    <div class="logo">
+                        <object class="logo__svg" data="./img/TOXIN.svg" type="image/svg+xml"></object>
+                    </div>
+                </div><span class="standard-nav-bar__mobile-menu">menu</span>
+                <div class="standard-nav-bar__navigation-region">
+                    <nav class="navigation">
+                        <ul class="navigation__menu">
+                            <li class="navigation__item"><a class="navigation__item-link" href="#">О&nbsp;нас</a>
+                            </li>
+                            <li class="navigation__item  navigation__item_sub"><a class="navigation__item-link" href="#">Услуги<span>expand_more</span></a>
+                            </li>
+                            <li class="navigation__item"><a class="navigation__item-link" href="#">Вакансии</a>
+                            </li>
+                            <li class="navigation__item"><a class="navigation__item-link" href="#">Новости</a>
+                            </li>
+                            <li class="navigation__item"><a class="navigation__item-link" href="#">Соглашения<span>expand_more</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div><span class="standard-nav-bar__mobile-profile">person_outline</span>
+                <div class="standard-nav-bar__login-region">
+                    <div class="standard-nav-bar__logged-element">
+                        <button class="buttons  buttons_border buttons_free-height buttons_padding20" type="button">Войти</button>
+                    </div>
+                    <div class="standard-nav-bar__logged-element">
+                        <button class="buttons  buttons_full buttons_free-height buttons_padding20" type="button">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="page-screen">
+        <section class="screen">
+            <form class="form-registration">
+                <header class="form-registration__section">
+                    <h1 class="form-registration__title">Регистрация аккаунта</h1>
+                </header>
+
+                <div class="form-registration__section">
+                    <div class="form-registration__item">
+                        <input class="text-field" placeholder="Имя" type="text" autocomplete="off">
+                    </div>
+                    <div class="form-registration__item">
+                        <input class="text-field" placeholder="Фамилия" type="text" autocomplete="off">
+                    </div>
+
+                    <div class="form-registration__item">
+                        <input type="radio" id="radio-button-man" name="sex" value="man" class="radio-button">
+                        <label for="radio-button-man" class="man">Мужчина</label>
+                        <input type="radio" id="radio-button-woman" name="sex" value="woman" class="radio-button">
+                        <label for="radio-button-woman" class="woman">Женщина</label>
+                    </div>
+
+                </div>
+                <div class="form-registration__section">
+                    <h4 class="form-registration__sub-title">День рождения</h4>
+                    <input class="masked-text-field" placeholder="ДД.ММ.ГГГ" type="text" name="date" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}">
+                </div>
+
+                <div class="form-registration__section">
+                    <h4 class="form-registration__sub-title">Данные для входа в сервис</h4>
+                    <div class="form-registration__item">
+                        <input class="text-field" placeholder="Email" type="text" autocomplete="off">
+                    </div>
+                    <div class="form-registration__item">
+                        <input class="text-field" placeholder="Пароль" type="text" autocomplete="off">
+                    </div>
+                    <div class="form-registration__item container">
+                        <input type="checkbox" id="toggle-button" class="toggle-button">
+                        <label for="toggle-button" class="text">Получать спецпредложения</label>
+                    </div>
+                </div>
+                <div class="form-registration__section">
+                    <button class="buttons buttons_full buttons_arrow buttons_big button-sign-up" type="button">Зарегистрироваться</button>
+                </div>
+
+                <div class="form-registration__section form-registration__section_login">
+                    <p>Уже есть аккаунт на Toxin</p>
+                    <button class="buttons button-sign-in" type="button">Войти</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <footer class="page-footer">
+        <hr class="page-footer__separator">
+        <div class="footer footer_widgets">
+            <div class="footer__widget-region">
+                <div class="footer__widget footer__widget_logo">
+                    <div class="logo">
+                        <object class="logo__svg" data="./img/TOXIN.svg" type="image/svg+xml"></object>
+                    </div>
+                    <p class="footer__logo-text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+                </div>
+                <div class="footer__widget">
+                    <div class="widget  toggle_menu">
+                        <h3 class="widget__title">навигация</h3>
+                        <nav class="navigation  navigation_vertical">
+                            <ul class="navigation__menu">
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/about">О нас</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/news">Новости</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/support">Служба поддержки</a>
+                                </li>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__widget">
+                    <div class="widget  toggle_menu">
+                        <h3 class="widget__title">О нас</h3>
+                        <nav class="navigation  navigation_vertical">
+                            <ul class="navigation__menu">
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/support">О сервисе</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/our-team">Наша команда</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/careers">Вакансии</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/investors">Инвесторы</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__widget">
+                    <div class="widget  toggle_menu">
+                        <h3 class="widget__title">Служба поддержки</h3>
+                        <nav class="navigation  navigation_vertical">
+                            <ul class="navigation__menu">
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/agreement">Соглашения</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/community">Сообщества</a>
+                                </li>
+                                <li class="navigation__item"><a class="navigation__item-link" href="link/contacts">Связь с нами</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__widget">
+                    <div class="widget  toggle_subscribe">
+                        <h3 class="widget__title">Подписка</h3>
+                        <p class="widget__description">Получайте специальные предложения и новости сервиса</p>
+                        <div class="subscription-text-field  subscription-text-field_primari-gradient">
+                            <input class="text-field" placeholder="Email" type="text" autocomplete="off"><span class="subscription-text-field__marker">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer__separator">
+            <div class="footer__copyright-region">
+                <p class="footer__copyright">Copyright © 2018 Toxin UI Kit. All rights reserved.</p>
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__item-link" href="#"><img src="img/twitter.svg" width="24" height="24" alt="twitter"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__item-link" href="#"><img src="img/facebook.svg" width="24" height="24" alt="facebook"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__item-link" href="#"><img src="img/instagram.svg" width="24" height="24" alt="instagram"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
